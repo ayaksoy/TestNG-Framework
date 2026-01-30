@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends CommonMethods {
 
 
-    @Test
+    @Test(groups= {"smoke","regression"})
     public void validLogin() {
         LoginPageElements loginPage = new LoginPageElements();
         DashboardPageElements dashboard = new DashboardPageElements();
@@ -24,7 +24,7 @@ public class LoginTest extends CommonMethods {
         Assert.assertEquals(actual, expected, "The account does NOT match!!!");
     }
 
-    @Test
+    @Test(groups="smoke")
     public void emptyPasswordLogin() {
         LoginPageElements loginPage = new LoginPageElements();
 
@@ -33,7 +33,7 @@ public class LoginTest extends CommonMethods {
         Assert.assertTrue(loginPage.passwordEmptyError.isDisplayed(), "error massage isnt dissplayed");
     }
 
-    @Test
+    @Test(groups="regression")
     public void invalidPasswordLogin() {
         LoginPageElements loginPage = new LoginPageElements();
 
