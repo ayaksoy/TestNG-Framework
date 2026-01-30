@@ -1,6 +1,7 @@
 package com.neotech.utils;
 
 import com.google.common.io.Files;
+import com.neotech.testbase.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;

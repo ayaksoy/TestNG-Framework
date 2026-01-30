@@ -1,5 +1,7 @@
-package com.neotech.utils;
+package com.neotech.testbase;
 
+import com.neotech.utils.ConfigsReader;
+import com.neotech.utils.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
