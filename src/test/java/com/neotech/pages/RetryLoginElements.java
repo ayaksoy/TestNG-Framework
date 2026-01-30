@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RetryLogin extends CommonMethods {
+public class RetryLoginElements extends CommonMethods {
     @FindBy(css = ".toast-message")
     public WebElement invalidCredentials;
 
-    public RetryLogin() {
+    public RetryLoginElements() {
         PageFactory.initElements(driver, this);
     }
 }
